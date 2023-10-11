@@ -1,0 +1,283 @@
+header {
+  height: 99px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+header.scroll {
+  background-color: white; 
+}
+header .wrap {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding-left: 3.13vw;
+  padding-right: 3.13vw;
+}
+header .wrap h1 {
+  
+}
+header .wrap h1 a {
+  font-size: 0;
+  width: 110px;
+  height: 70px;
+  display: block;
+  background-image: url(../img/w-logo.png);
+}
+header.scroll .wrap h1 a {
+  background-image: url(../img/logo.png);
+}
+header .wrap .hnav {
+
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+header .wrap .hnav a {
+
+}
+header .wrap .hnav a.purchase {
+  font-size: 0;
+  color: white;
+  width: 110px;
+  text-align: center;
+}
+header .wrap .hnav a.purchase::before {
+  content: "Purchase";
+  font-size: 24px;
+}
+header .wrap .hnav a.purchase:hover::before {
+  content: "구매";
+  text-align: center;
+}
+header.scroll .wrap .hnav a.purchase {
+  color: #E7021D;
+  font-size: 0;
+}
+header .wrap .hnav a.login {
+  font-size: 0;
+  width: 26px;
+  height: 26px;
+  display: block;
+  background-image: url(../img/w-my.png);
+  background-repeat: no-repeat;
+}
+header.scroll .wrap .hnav a.login {
+  background-image: url(../img/my.png);
+}
+header .wrap .hnav button.menu {
+  width: 30px;
+  height: 26px;
+  display: block;
+  background-image: url(../img/w-menu.png);
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+header.scroll .wrap .hnav button.menu {
+  background-image: url(../img/menu.png);
+}
+
+/* 버튼시 메뉴 */
+.full {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.full h2 {
+  display: block;
+  position: relative;
+  padding-bottom: 12px;
+  font-size: 26px;
+  line-height: 1.346;
+  letter-spacing: -0.05em;
+  color: #fff;
+}
+.full a {
+  color: white;
+}
+.full h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #515151;
+}
+.full h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+.full .flmodel:hover h2::after {
+  background-color: #E7021D;
+  width: 100%;
+  height: 1px;
+}
+.full li:hover h2::after {
+  background-color: #E7021D;
+  width: 100%;
+  height: 1px;
+}
+.full .flmenu {
+  width: 100%;
+  padding-top: 97px;
+  min-width: 1200px;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+.full .flmenu .fllog {
+  display: flex;
+  position: absolute;
+  top: 36px;
+  right: 90px;
+}
+.full .flmenu .fllog a {
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 1.361;
+}
+.full .flmenu button {
+  position: absolute;
+  right: 0;
+  top: 36px;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  background-image: url(../img/close.png);
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  cursor: pointer;
+}
+.full .flmenu .flwrap {
+  display: flex;
+  justify-content: space-between;
+}
+.full .flmenu .flwrap .flmodel {
+  width: 30%;
+}
+.full .flmenu .flwrap .flmodel ul li {
+  margin-top: 15px;
+}
+.full .flmenu .flwrap .flmodel ul li a {
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  color: #878787;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+.full .flmenu .flwrap .flmodel ul li a img {
+  background-color: #141414;
+  width: 194px;
+  height: 96px;
+}
+.full .flmenu .flwrap .flmodel ul li a span {
+  margin-left: 20px;
+}
+.full .flmenu .flwrap .flmodel ul li a span:hover {
+  color: white;
+}
+.full .flmenu .flwrap .flmenulist {
+  width: 66%;
+}
+.full .flmenu .flwrap .flmenulist .blist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.full .flmenu .flwrap .flmenulist .blist > li {
+  width: 28%;
+}
+.full .flmenu .flwrap .flmenulist .blist > li:nth-child(2),.full .flmenu .flwrap .flmenulist .blist > li:nth-child(3),.full .flmenu .flwrap .flmenulist .blist > li:nth-child(5) {
+  margin-left: 8%;
+}
+.full .flmenu .flwrap .flmenulist .blist .slist li {
+  margin-top: 25px;
+}
+.full .flmenu .flwrap .flmenulist .blist .slist a {
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  color: #878787;
+  line-height: 1.2;
+}
+.full .flmenu .flwrap .flmenulist .blist .slist a:hover {
+  color: white;
+}
+.full .flmenu .flbottom {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #515151;
+  margin-top: 50px;
+  /*! font-size: 0; */
+}
+.full .flmenu .flbottom .flsns {
+  display: flex;
+}
+.full .flmenu .flbottom .flsns a {
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  font-size: 0;
+}
+.full .flmenu .flbottom .flsns a.flfb {
+  background-image: url(../img/flfb.png);
+}
+.full .flmenu .flbottom .flsns a.flyt {
+  background-image: url(../img/flyt.png);
+}
+.full .flmenu .flbottom .flsns a.flig {
+  background-image: url(../img/flig.png);
+}
+.full .flmenu .flbottom .fladd {
+  display: flex;
+}
+.full .flmenu .flbottom .fladd a {
+  padding-left: 46px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #fff;
+  margin-left: 40px;
+}
+.full .flmenu .flbottom .fladd .add1 {
+  background: url(../img/add1.png) no-repeat 0 50%;
+}
+.full .flmenu .flbottom .fladd .add2 {
+  background: url(../img/add2.png) no-repeat 0 50%;
+}
+.full .flmenu .flbottom .fladd .add3 {
+  background: url(../img/add3.png) no-repeat 0 50%;
+}
+
+.open {
+  overflow: hidden;
+}
+.open .full {
+  display: block;
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혼다 자동차 카피</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()){
+                    $('header').addClass('scroll');
+                }
+                else{
+                    $('header').removeClass('scroll');
+                }
+                if($(window).scrollTop()>900){
+                    $(".top").stop().fadeIn(200);
+                }else{
+                    $(".top").stop().fadeOut(200);
+                }
+            });
+
+            $("header .wrap .hnav button.menu").click(function(){
+                $("body").addClass("open");
+            });
+
+            $(".full .flmenu button.flclose").click(function(){
+                $("body").removeClass("open");
+            });
+
+            $("#experience .chart .detail a").hover(function(){
+                $(this).parent().parent().children(".photo").toggleClass("hv");
+            });
+
+            $("aside a.top").click(function(){
+                $("html,body").animate({scrollTop:0},500);
+            });
+        });
+    </script>
+    <!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".title_ani").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                speed: 1000,
+                fade: true,
+                pauseOnFocus: false,
+                pauseOnHover: false
+            });
+            $(".post").slick({
+                autoplay: false,
+                infinite: false,
+                slidesToShow: 4
+            });
+        });
+    </script>
+    <!-- AOS -->
+    <link href="aos/aos.css" rel="stylesheet">
+    <script src="aos/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+            AOS.init();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="wrap flex">
+            <h1><a href="">혼다로고</a></h1>
+            <div class="hnav">
+                <a href="" class="purchase">Purchase</a>
+                <a href="" class="login">로그인</a>
+                <button class="menu" type="button">메뉴</button>
+            </div>
+        </div>
+    </header>
+    <div class="full">
+        <div class="flmenu">
+            <div class="fllog">
+                <a href="">로그인</a>
+                <a href="">회원가입</a>
+            </div>
+            <button class="flclose">닫기</button>
+            <div class="flwrap">
+                <div class="flmodel">
+                    <h2><a href="">온라인쇼룸</a></h2>
+                    <ul>
+                        <li><a href=""><img src="img/model1.png" alt=""><span>CR-V Turbo</span></a></li>
+                        <li><a href=""><img src="img/model2.png" alt=""><span>CR-V Hybrid</span></a></li>
+                        <li><a href=""><img src="img/model3.png" alt=""><span>Odyssey</span></a></li>
+                        <li><a href=""><img src="img/model4.png" alt=""><span>Pilot</span></a></li>
+                        <li><a href=""><img src="img/model5.png" alt=""><span>2024 Accord(출시예정)</span></a></li>
+                        <li><a href=""><img src="img/model6.png" alt=""><span>2024 Accord HEV(출시예정)</span></a></li>
+                    </ul>
+                </div>
+                <div class="flmenulist">
+                    <ul class="blist">
+                        <li>
+                            <h2>체험</h2>
+                            <ul class="slist">
+                                <li><a href="">시승예약</a></li>
+                                <li><a href="">전시장 네트워크</a></li>
+                                <li><a href="">전시차 조회</a></li>
+                                <li><a href="">시승차 조회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>구매</h2>
+                            <ul class="slist">
+                                <li><a href="">예상 출고시점 조회</a></li>
+                                <li><a href="">견적 및 구매하기</a></li>
+                                <li><a href="">이달의 프로모션</a></li>
+                                <li><a href="">온라인 구매방법</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>서비스</h2>
+                            <ul class="slist">
+                                <li><a href="">서비스 안내</a></li>
+                                <li><a href="">부품 정보</a></li>
+                                <li><a href="">리콜 안내</a></li>
+                                <li><a href="">서비스 네트워크</a></li>
+                                <li><a href="">사용자 매뉴얼</a></li>
+                                <li><a href="">혼다 앱</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>혼다</h2>
+                            <ul class="slist">
+                                <li><a href="">혼다소식</a></li>
+                                <li><a href="">커뮤니티</a></li>
+                                <li><a href="">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>고객지원</h2>
+                            <ul class="slist">
+                                <li><a href="">고객지원</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flbottom">
+                <div class="flsns">
+                    <a href="" class="flfb">Facebook</a>
+                    <a href="" class="flyt">Youtube</a>
+                    <a href="" class="flig">Instagram</a>
+                </div>
+                <div class="fladd">
+                    <a href="" class="add1">온라인 시승예약</a>
+                    <a href="" class="add2">견적/구매</a>
+                    <a href="" class="add3">전시장</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="title">
+        <div class="title_ani">
+            <a class="title_car_1" href=""></a>
+            <a class="title_car_2" href=""></a>
+            <a class="title_car_3" href=""></a>
+        </div>
+    </section>
+    <main>
+        <section id="product">
+            <div class="product_list flex">
+                <div class="product_car_1">
+                    <h2>CR-V TURBO</h2>
+                    <div class="car_photo"><a href=""></a></div>
+                </div>
+                <div class="product_car_2">
+                    <h2>ODYSSEY</h2>
+                    <div class="car_photo"><a href=""></a></div>
+                </div>
+                <div class="product_car_3">
+                    <h2>PILOT</h2>
+                    <div class="car_photo"><a href=""></a></div>
+                </div>
+                <div class="product_car_4">
+                    <h2>CR-V HYBRID</h2>
+                    <div class="car_photo">
+                        <a href=""></a>
+                        <div class="pre_book">사전계약 중</div>
+                    </div>
+                </div>
+                <div class="product_car_5">
+                    <h2>ACCORD TURBO</h2>
+                    <div class="car_photo">
+                        <a href=""></a>
+                        <div class="pre_book">사전계약 중</div>
+                    </div>
+                </div>
+                <div class="product_car_6">
+                    <h2>ACCORD HYBRID</h2>
+                    <div class="car_photo">
+                        <a href=""></a>
+                        <div class="pre_book">사전계약 중</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="link" class="flex">
+            <a href="" data-aos="fade-up" data-aos-duration="600">
+                <span class="link_1"></span>
+                <p>전시차 조회</p>
+            </a>
+            <a href="" data-aos="fade-up" data-aos-duration="750">
+                <span class="link_2"></span>
+                <p>시승예약</p>
+            </a>
+            <a href="" data-aos="fade-up" data-aos-duration="900">
+                <span class="link_3"></span>
+                <p>견적 산출</p>
+            </a>
+            <a href="" data-aos="fade-up" data-aos-duration="1050">
+                <span class="link_4"></span>
+                <p>구매혜택</p>
+            </a>
+            <a href="" data-aos="fade-up" data-aos-duration="1200">
+                <span class="link_5"></span>
+                <p>혼다 서비스</p>
+            </a>
+            <a href="" data-aos="fade-up" data-aos-duration="1350">
+                <span class="link_6"></span>
+                <p>서비스센터</p>
+            </a>
+        </section>
+        <section id="experience">
+            <h2 class="h2" data-aos="fade-up" data-aos-duration="500">EXPERIENCE</h2>
+            <div class="chart">
+                <div class="photo" data-aos="fade-up" data-aos-duration="1000"></div>
+                <div class="detail">
+                    <h3 data-aos="fade-up" data-aos-duration="1000">온라인 쇼룸</h3>
+                    <p data-aos="fade-up" data-aos-duration="1250">모델별 주요 특장점을 손쉽게 체험해 보세요.</p>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="chart">
+                <div class="detail">
+                    <h3 data-aos="fade-up" data-aos-duration="1000">시승 예약</h3>
+                    <p data-aos="fade-up" data-aos-duration="1250">가까운 전시장에서 혼다를 체험해 보세요.</p>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">LEARN MORE</a>
+                </div>
+                <div class="photo" data-aos="fade-up" data-aos-duration="1000"></div>
+            </div>
+        </section>
+        <section id="purchase">
+            <h2 class="h2" data-aos="fade-up" data-aos-duration="500">PURCHASE</h2>
+            <div class="purchase_content">
+                <div class="purchase_photo_1" data-aos="fade-up" data-aos-duration="1000"></div>
+                <div class="purchase_photo_2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="bg"></div>
+                    <div class="detail">
+                        <h3 data-aos="fade-up" data-aos-duration="1000">혼다자동차를<br>스마트하게 만나는 방법</h3>
+                        <p data-aos="fade-up" data-aos-duration="1250">혼다 자동차를 온라인에서 언제 어디서나<br>내 것으로 만드세요.</p>
+                        <a href="" data-aos="fade-up" data-aos-duration="1500">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="community">
+            <h2 class="h2" data-aos="fade-up" data-aos-duration="500">COMMUNITY</h2>
+            <ul class="post">
+                <li class="list">
+                    <a href="">
+                        <img src="img/c1.jpg" alt="">
+                        <div class="text">
+                            <h3>혼다블로그</h3>
+                            <p>혼다자동차 오너들을 위한 다양한 소식을<br>만나보세요.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="">
+                        <img src="img/c2.jpg" alt="">
+                        <div class="text">
+                            <h3>앰버서더 스토리</h3>
+                            <p>혼다 앰버서더들이 경험한 이야기를<br>들려드릴게요.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="">
+                        <img src="img/c3.jpg" alt="">
+                        <div class="text">
+                            <h3>이벤트</h3>
+                            <p>혼다자동차에서 진행중인 다양한 혜택,<br>진행중인 이벤트에서 확인하세요.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="">
+                        <img src="img/c4.jpg" alt="">
+                        <div class="text">
+                            <h3>시승후기</h3>
+                            <p>혼다자동차를 시승한 고객님들<br>솔직한 시승후기</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="">
+                        <img src="img/c5.jpg" alt="">
+                        <div class="text">
+                            <h3>출고후기</h3>
+                            <p>계약부터 출고까지..<br>혼다자동차를 선택한 고객님들의 이야기</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="">
+                        <img src="img/c6.jpg" alt="">
+                        <div class="text">
+                            <h3>내차자랑</h3>
+                            <p>혼다자동차 오너분들이 이야기하고 싶은<br>내차 자랑</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="app">
+            <h2 class="hide">APP DOWNLOAD</h2>
+            <div class="app_bg_1">
+                <div class="app_detail">
+                    <h3 data-aos="fade-up" data-aos-duration="1000"><span>Your Best Partner</span>MY HONDA APP</h3>
+                    <P data-aos="fade-up" data-aos-duration="1250">차량 정비/점검, 차량 소모품 관리, 정비예약.<br>'My honda app'으로 고객님의 차량을 관리하세요.</P>
+                    <div class="app_img" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="img/app.png" alt="app store">
+                        <img src="img/google.png" alt="google play store">
+                    </div>
+                </div>
+            </div>
+            <div class="app_bg_2"></div>
+        </section>
+        <section id="news">
+            <div class="news_header">
+                <h2 class="h2" data-aos="fade-up" data-aos-duration="500">NEWS</h2>
+                <a href="">LEARN MORE</a>
+            </div>
+            <ul class="news_list">
+                <li><a href="">혼다코리아, 삼성카드와 업무협약(MOU) 체결 "자동차 구매 고객 부담 줄인다"</a></li>
+                <li><a href="">혼다 자동차 신규 서비스 협력점 오픈 안내 2022.03.01</a></li>
+                <li><a href="">(마감) 혼다코리아 , 혼다 데이 (Honda Day) 고객 초청 골프 대회 참가자 모집 2022.07.01</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="cs">
+            <h2>고객문의 / 24시간 긴급서비스</h2>
+            <strong>080-360-0505</strong>
+            <address>
+                <span>혼다코리아 주식회사 대표자명 : 이지홍</span>
+                <span><a href="">사업자정보확인</a></span>
+                <br>
+                <span>주소 : 서울시 강남구 테헤란로 114길 38 동일타워 13F</span>
+                <span>대표전화 : 02-3416-3300</span>
+                <br>
+                <span>사업자등록번호 : 214-86-92855</span>
+                <span>통신판매업 신고번호 : 2022-서울강남-03241</span>
+                <span>호스팅 서비스 제공 : AWS</span>
+            </address>
+        </div>
+        <div class="fnb">
+            <div class="footer_menu">
+                <div class="">
+                    <h3><a href="">온라인 쇼룸</a></h3>
+                    <ul>
+                        <li><a href="">CR-V Turbo</a></li>
+                        <li><a href="">Odyssey</a></li>
+                        <li><a href="">Pilot</a></li>
+                        <li>CR-V HEV(사전계약 중)</li>
+                        <li>2023 Accord(출시예정)</li>
+                        <li>2023 Accord HEV(출시예정)</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3><a href="">체험</a></h3>
+                    <ul>
+                        <li><a href="">시승예약</a></li>
+                        <li><a href="">전시장 네트워크</a></li>
+                        <li><a href="">전시차 조회</a></li>
+                        <li><a href="">시승차 조회</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3><a href="">구매</a></h3>
+                    <ul>
+                        <li><a href="">예상 출고시점 조회</a></li>
+                        <li><a href="">견적 및 구매하기</a></li>
+                        <li><a href="">사전계약</a></li>
+                        <li><a href="">이달의 프로모션</a></li>
+                        <li><a href="">온라인 구매방법</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3><a href="">서비스</a></h3>
+                    <ul>
+                        <li><a href="">서비스 안내</a></li>
+                        <li><a href="">부품 정보</a></li>
+                        <li><a href="">리콜 안내</a></li>
+                        <li><a href="">서비스 네트워크</a></li>
+                        <li><a href="">사용자 매뉴얼</a></li>
+                        <li><a href="">혼다 앱</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3><a href="">혼다</a></h3>
+                    <ul>
+                        <li><a href="">혼다소식</a></li>
+                        <li><a href="">커뮤니티</a></li>
+                        <li><a href="">이벤트</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3><a href="">고객지원</a></h3>
+                    <ul>
+                        <li><a href="">고객지원</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_right">
+                <a href="">혼다고객센터</a>
+                <a href="">이용약관</a>
+                <a href="">개인정보 처리방침</a>
+                <a href="">개인위치정보사업<br>이용약관</a>
+                <a href="">위치기반서비스 이용약관</a>
+                <a href="">CONTACT US</a>
+                <a href="">등록번호 214-86-92855</a>
+                <a href="">채용정보</a>
+                <a href="" class="br">Honda Worldwide</a>
+                <a href="">혼다코리아</a>
+                <a href="">혼다모터사이클</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p class="copyright">COPYRIGHT (C) 2023 HONDA KOREA. ALL RIGHTS RESERVED.</p>
+            <div class="sns">
+                <a href="" class="fb">Facebook</a>
+                <a href="" class="yt">Youtube</a>
+                <a href="" class="ig">Instagram</a>
+            </div>
+        </div>
+        <aside>
+            <a href="" class="buycar">
+                <span class="icon"></span>
+                <span class="txt">차량구매</span>
+            </a>
+            <a href="" class="aside_cs">고객지원</a>
+            <a href="#title" class="top">상단으로</a>
+        </aside>
+    </footer>
+</body>
+</html>

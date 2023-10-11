@@ -1,0 +1,154 @@
+footer { 
+  background-color: black;
+  color: white;
+}
+footer .cs {
+  padding: 3.91vw 3.13vw;
+}
+footer .cs h2 {
+  font-size: 18px;
+  line-height: 1.361;
+  font-weight: 500;
+}
+footer .cs strong {
+  font-size: 3.91vw;
+  line-height: 1.36;
+  font-weight: 400;
+}
+footer .cs address { 
+  font-size: 14px;
+  line-height: 2.143;
+  margin-top: 30px;
+}
+footer .cs address span {
+  margin-right: 20px;
+}
+footer .fnb {
+  padding: 1.56vw 3.13vw 5.08vw;
+  display: flex;
+  justify-content: space-between;
+}
+footer .fnb .footer_menu {
+  display: flex;
+}
+footer .fnb .footer_menu div { 
+  margin-right: 2.34vw;
+}
+footer .fnb .footer_menu div h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 29px;
+}
+footer .fnb .footer_menu div ul li {
+  font-size: 14px;
+  line-height: 2.143;
+}
+footer .fnb .footer_right {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  text-align: right;
+  line-height: 1.375;
+  margin-top: -120px;
+}
+footer .fnb .footer_right a {
+  margin-top: 8px;
+}
+footer .fnb .footer_right a.br {
+  margin-top: 48px;
+}
+footer .footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.33vw 3.13vw 1.33vw;
+  background-color: #f1f1f1;
+  color: black;
+}
+footer .footer_bottom .copyright {
+  font-size: 14px;
+  line-height: 1.571;
+}
+footer .footer_bottom .sns {
+  display: flex;
+}
+footer .footer_bottom .sns a {
+  margin-left: 8px;
+  display: block;
+  width: 41px;
+  height: 41px;
+  font-size: 0;
+}
+footer .footer_bottom .sns a.fb {
+  background: url(../img/fb.png) no-repeat 50% 50%;
+}
+footer .footer_bottom .sns a.yt {
+  background: url(../img/yt.png) no-repeat 50% 50%;
+}
+footer .footer_bottom .sns a.ig {
+  background: url(../img/ig.png) no-repeat 50% 50%;
+}
+aside {
+  position: fixed;
+  right: 16px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+aside a {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+aside .buycar {
+  height: 84px;
+  background-color: black;
+  font-size: 15px;
+  overflow: hidden;
+  padding: 18px 0 10px 0;
+  box-sizing: border-box;
+}
+aside .buycar .icon {
+  animation: carAct2 4s 0s infinite;
+  background-image: url(../img/car.png);
+  display: block;
+  width: 81px;
+  height: 28px;
+  position: relative;
+}
+@keyframes carAct2{
+  0%{left:100%}
+  15%{left:20%}
+  50%{left:20%}
+  85%{left:20%}
+  100%{left:-150%}
+}
+aside .buycar .txt {
+  margin-top: 10px;
+  display: block;
+}
+aside .aside_cs {
+  background-color: #2073B7;
+  font-size: 0;
+  background-image: url(../img/cs.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+aside .top {
+  background-color: #e60020;
+  font-size: 0;
+  background-image: url(../img/top.png);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+
+
+footer a {
+  color: white;
+}
